@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-6</title>
+    <style>
+      img {
+        height: 250px;
+        width: 250px;
+      }
+      #pp {
+        display: flex;
+        justify-content: center;
+      }
+      #login {
+        background-color: #04aa6d;
+        width: 500px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 20px;
+        padding: 5px;
+      }
+      button{
+    background-color: palevioletred;
+    height: 25px;
+    width: 55px;
+    border-radius: 10px;
+    margin: 5px;
+    
+ }
+      
+     
+      #footer{
+        background-color: grey;
+        height: 40px;
+        width:500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+      }
+      .form{
+        max-width: max-content;
+  
+  margin-left: auto;
+  margin-right: auto;
+        
+      }
+      input[type='text']{
+        width:500px;
+      }
+      input[type='password']{
+        width:500px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="pp">
+      <img src="../images/icon-5359554_1280.png" />
+    </div>
+    <div class="form">
+        <div id="cred">
+      <label for="uname"><strong>Username</strong></label
+      ><br />
+      <input type="text" id="uname" placeholder="Enter Username" /><br />
+      <label for="pass"><strong>Password</strong></strong></label><br />
+      <input type="password" id="pass" placeholder="Enter Username" />
+      </div>
+      <div id="login">Login</div>
+      <input type="checkbox" id="rem" value="Remember me" />
+      <label for="rem">Remember me</label><br />
+      <div id="footer">
+        <button>cancel</button>
+        <a href="#">Forget password?</a>
+      </div>
+    </div>
+  </body>
+</html>
