@@ -5,24 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS-2</title>
     <style>
-      div {
+      #hornav {
         display: flex;
+        justify-content: center;
+        border: 1px solid black;
         flex-direction: column;
-        width: 250px;
-        padding: 1rem;
+        width: 200px;
         background-color: lightskyblue;
         color: blue;
+        height: 260px;
+        font-size: 30px;
       }
-     
+      .hov:hover {
+        background-color: yellow;
+        color: black;
+        font-size: larger;
+      }
+      #vertnav {
+        display: flex;
+        margin-right: 10px;
+        color: blueviolet;
+        margin-top: 50px;
+      }
+      .hov {
+        padding: 10px;
+      }
+
+      table tr td {
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
-    <div id="css1"></div>
-    <div>Home </div>
-    <div>Java</div>
-    <div>CSS</div> </div>
-    <div>HTML</div>
-    <div>Bootstrap</div>
-  
+    <div id="hornav">
+      <div class="hov">Home</div>
+      <div class="hov">Java</div>
+      <div class="hov">CSS</div>
+      <div class="hov">HTML</div>
+      <div class="hov">Bootstrap</div>
+    </div>
+
+    <div id="vertnav">
+      <table>
+        <tr>
+          <td class="hov">Home</td>
+          <td class="hov">Java</td>
+          <td class="hov">Html</td>
+          <td class="hov">Css</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
