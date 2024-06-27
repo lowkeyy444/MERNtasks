@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 5</title>
+    <style>
+      form {
+        max-width: 400px;
+        margin: auto;
+      }
+      label,
+      input,
+      textarea,
+      button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        width: auto;
+      }
+      .warning {
+        color: red;
+      }
+    </style>
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let website = document.getElementById("website").value;
+        let message = document.getElementById("message").value;
+
+        if (name === "" || email === "" || website === "" || message === "") {
+          document.getElementById("warning").innerText =
+            "All fields are required.";
+          return false;
+        } else {
+          document.getElementById("warning").innerText = "";
+          alert("Form submitted successfully!");
+          return true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+      <p id="warning" class="warning"></p>
+    </form>
+  </body>
+</html>
